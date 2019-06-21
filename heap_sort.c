@@ -73,10 +73,11 @@ void print_arr(int* arr, int size) {
   printf("\n");
 }
 
-void main() {
-  int arr[] = {9, 4, 5, 7, 10, 1, 0, 3};
+int main() {
+  int arr[10] = {9, 4, 5, 7, 10, 1, 0, 3};
   int size = sizeof(arr)/sizeof(arr[0]);
   initialize_heap(size);
   heap_sort(arr, size);
   print_arr(arr, size);
+  return 0;
 }
